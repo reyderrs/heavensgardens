@@ -8,13 +8,18 @@
   align-items: flex-start;
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
+
 
 @media only screen and (max-width: 950px) {
   .gallery {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-  } 
+  }
   .details {
   column-count: 1;
   padding: 2vmax;
@@ -26,6 +31,10 @@
   width: 85%;
   height: auto;
 }
+.gallery .videocontainer {
+  width: 85%;
+  height: auto;
+}
 .gallery .intro {
   width: 85%;
   text-align: justify;
@@ -33,7 +42,7 @@
 
 }
 
-@media only screen and (min-width : 950px) { 
+@media only screen and (min-width : 950px) {
  .details {
   column-count: 2;
 }
@@ -42,16 +51,21 @@
   width: 400px;
   height: auto;
 }
+.gallery .videocontainer {
+  width: 400px;
+  height: auto;
+}
+
 .gallery figure:hover {
   width: 500px;
-} 
+}
 .gallery .intro {
   width: 350px;
 }
 }
 
 
-@media only screen and (min-width : 2000px) { 
+@media only screen and (min-width : 2000px) {
  .details {
   font-size: 3em;
 }
@@ -60,9 +74,15 @@
   width: 800px;
   height: auto;
 }
+
+.gallery .videocontainer {
+  width: 800px;
+  height: auto;
+}
+
 .gallery figure:hover {
   width: 1000px;
-} 
+}
 .gallery .intro {
   width: 700px;
   font-size: 3em;
@@ -78,9 +98,15 @@
   width: 1600px;
   height: auto;
 }
+
+.gallery .videocontainer {
+  width: 1600px;
+  height: auto;
+}
+
 .gallery figure:hover {
   width: 2000px;
-} 
+}
 .gallery .intro {
   width: 1400px;
   font-size: 4em;
@@ -125,7 +151,7 @@ h1 {
 }
 
 h3 {
-	font-size: 1vmax;
+	font-size: 1.5vmax;
 }
 
 @font-face { font-family: roboto-regular;
@@ -139,7 +165,7 @@ h2 {
 }
 
 header h2 {
-  font-family: 'Nova Oval', cursive; 
+  font-family: 'Nova Oval', cursive;
 }
 
 header {
