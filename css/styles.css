@@ -1,0 +1,185 @@
+.gallery {
+  width: 100%;
+  min-height: 50vh;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+@media only screen and (max-width: 950px) {
+  .gallery {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  } 
+  .details {
+  column-count: 1;
+  padding: 2vmax;
+  column-gap: 2vmax;
+  text-align: justify;
+}
+
+.gallery figure {
+  width: 85%;
+  height: auto;
+}
+.gallery .intro {
+  width: 85%;
+  text-align: justify;
+}
+
+}
+
+@media only screen and (min-width : 950px) { 
+ .details {
+  column-count: 2;
+}
+.gallery figure {
+  transition: width 1s;
+  width: 400px;
+  height: auto;
+}
+.gallery figure:hover {
+  width: 500px;
+} 
+.gallery .intro {
+  width: 350px;
+}
+}
+
+
+@media only screen and (min-width : 2000px) { 
+ .details {
+  font-size: 3em;
+}
+.gallery figure {
+  transition: width 1s;
+  width: 800px;
+  height: auto;
+}
+.gallery figure:hover {
+  width: 1000px;
+} 
+.gallery .intro {
+  width: 700px;
+  font-size: 3em;
+}
+}
+
+@media only screen and (min-width : 3000px) {
+ .details {
+  font-size: 4em;
+}
+.gallery figure {
+  transition: width 1s;
+  width: 1600px;
+  height: auto;
+}
+.gallery figure:hover {
+  width: 2000px;
+} 
+.gallery .intro {
+  width: 1400px;
+  font-size: 4em;
+}
+}
+
+img {
+  animation-name: opacity-change;
+  animation-duration: 15s;
+}
+
+
+@keyframes opacity-change {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+footer {
+  font-style: italic;
+  font-size: 1vmax;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  border-style: solid;
+}
+
+.reference {
+  font-size: 0.5vmax;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 4vmax;
+}
+
+h3 {
+	font-size: 1vmax;
+}
+
+@font-face { font-family: roboto-regular;
+			 src: url('../font/NovaOval-Regular.ttf');
+     }
+
+h2 {
+  font-size: 1.5vmax;
+  width: 100%;
+  text-align: center;
+}
+
+header h2 {
+  font-family: 'Nova Oval', cursive; 
+}
+
+header {
+  border-radius: 25px;
+  border-style: solid;
+  animation-name: green-flashing;
+  animation-duration: 15s;
+  transition: background 15s;
+}
+
+
+
+@keyframes green-flashing {
+  from {
+    background-color: lightgreen;
+  }
+
+  to {
+    background-color: inherit;
+  }
+}
+
+header:hover {
+  background-color: aquamarine;
+}
+
+
+body {
+  background-image: url('../images/background-5574027_1920.png');
+  background-repeat: no-repeat center;
+  background-size: cover;
+}
+
+nav {
+  margin-top: 2em;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5vmax;
+}
+
+figcaption {
+	font-size: 1vmax;
+}
