@@ -19,9 +19,40 @@
     <a href="index.html">Home</a> |
     <a href="maple.html">Full Moon Maple 'Autumn Moon'</a> |
     <a href="treepeony.html">Japanese Tree Peony 'Hanakisoi'</a> |
-    <a href="cherry.html">Nanking Cherry</a>
+    <a href="cherry.html">Nanking Cherry</a>|
+    <a href="#0" id="close"> Close the Question form </a>
+    <a href="#0" id="trigger"> Ask us a question </a>
   </nav>
 
+  <section id="formContainer">
+
+<div id="formWrapper">
+    <form action="mailto:reyderrs@gmail.com?subject='Ask a question'" method="post" enctype="text/plain" validate onsubmit="wrapUp()">
+      <div class="field">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="Your name" name="firstname" required>
+      </div>
+      <div class="field">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="your Last name" name="lastname" required>
+      </div>
+      <div class="field">
+        <label for="mail">Email</label>
+        <input type="email" id="mail" placeholder="your email address" name="email" required>
+      </div>
+      <div class="field">
+        <label for="tarea">Question:</label>
+        <textarea id="tarea" name="comments" placeholder="your question"></textarea>
+      </div>
+      <div class="field">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+
+    </form>
+</div>
+
+  </section>
   <article>
     <h2>Full Moon Maple <q>Autumn Moon</q> </h2>
 
@@ -140,5 +171,5 @@
       href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5574027" target="_blank">Pixabay</a>
   </footer>
 </body>
-
+  <script src="js\form.js"></script>
 </html>
